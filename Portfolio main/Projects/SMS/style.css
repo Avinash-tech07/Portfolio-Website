@@ -1,0 +1,192 @@
+/* --- CSS Variables for easy theming --- */
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #1e40af;
+    --bg-light: #f3f4f6;
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+    --border-color: #e5e7eb;
+    --sidebar-width: 250px;
+}
+
+/* --- Global Reset --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
+
+/* --- Login Page Styles --- */
+.main-header, footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: white;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.login-box {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.divider {
+    text-align: center;
+    margin: 1.5rem 0;
+    position: relative;
+}
+
+.divider::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--border-color);
+    z-index: 1;
+}
+
+.divider span {
+    background: white;
+    padding: 0 10px;
+    position: relative;
+    z-index: 2;
+    color: var(--text-light);
+}
+
+/* --- Dashboard Grid Layout --- */
+.dashboard-layout {
+    display: grid;
+    grid-template-columns: var(--sidebar-width) 1fr;
+    grid-template-rows: 60px 1fr;
+    grid-template-areas: 
+        "header header"
+        "sidebar main";
+    height: 100vh;
+}
+
+.dash-header {
+    grid-area: header;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background: white;
+    border-right: 1px solid var(--border-color);
+    padding: 2rem 0;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 1rem 2rem;
+    color: var(--text-dark);
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.sidebar ul li.active a, .sidebar ul li a:hover {
+    background: var(--bg-light);
+    color: var(--primary-color);
+    border-left: 4px solid var(--primary-color);
+}
+
+.main-content {
+    grid-area: main;
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+/* --- Data Grid --- */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.stat-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.data-table th, .data-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* --- Media Queries for Responsiveness --- */
+@media (max-width: 768px) {
+    .dashboard-layout {
+        /* Stacks the sidebar above the main content on mobile */
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px auto 1fr;
+        grid-template-areas: 
+            "header"
+            "sidebar"
+            "main";
+    }
+
+    .sidebar {
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+        padding: 1rem 0;
+    }
+
+    .sidebar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .sidebar ul li a {
+        padding: 0.5rem 1rem;
+        border-left: none;
+    }
+    
+    .sidebar ul li.active a {
+        border-bottom: 2px solid var(--primary-color);
+    }
+}

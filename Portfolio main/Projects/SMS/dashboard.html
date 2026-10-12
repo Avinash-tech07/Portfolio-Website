@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Student Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-layout">
+    <header class="dash-header">
+        <div class="logo">EduManage</div>
+        <div class="user-profile">
+            <span id="userNameDisplay">Admin User</span>
+            <button id="logoutBtn" class="btn-sm">Logout</button>
+        </div>
+    </header>
+
+    <nav class="sidebar">
+        <ul>
+            <li class="active"><a href="#overview">Overview</a></li>
+            <li><a href="#students">Students</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#reports">Reports</a></li>
+            <li><a href="#settings">Settings</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <h2>Dashboard Overview</h2>
+        <section class="stats-grid">
+            <div class="stat-card">
+                <h3>Total Students</h3>
+                <p class="stat-number">1,245</p>
+            </div>
+            <div class="stat-card">
+                <h3>Active Courses</h3>
+                <p class="stat-number">34</p>
+            </div>
+        </section>
+
+        <section class="recent-activity">
+            <h3>Recent Enrollments</h3>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Course</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="studentTableBody">
+                    </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="js/script.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AKS - Developer Portfolio</title>
+  <meta name="description"
+    content="Full-stack developer and CS Engineering student. Java, JavaScript, and building things that work." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>AKS<span class="logo-bracket">/&gt;</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" data-label="01">About</a></li>
+        <li><a href="#skills" data-label="02">Skills</a></li>
+        <li><a href="#experience" data-label="03">Experience</a></li>
+        <li><a href="#projects" data-label="04">Projects</a></li>
+        <li><a href="#education" data-label="05">Education</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+        <li><a href="#resume" data-label="doc">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Main Section -->
+  <section id="hero">
+    <div class="scanlines"></div>
+    <div class="hero-content">
+      <p class="hero-greeting">
+        <span class="prompt">~$</span>
+        <span class="typed-greeting" id="typedGreeting"></span>
+        <span class="cursor" id="cursorGreeting">|</span>
+      </p>
+      <h1 class="hero-name">
+        Avinash<br /><span class="name-accent">Kumar Sharma</span>
+      </h1>
+      <p class="hero-tagline">Full-Stack Developer &amp; CS Engineering Student</p>
+      <p class="hero-subtext">
+        Building software that solves real problems — in Java, JavaScript, and whatever it takes.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">See My Work</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+      <div class="hero-badges">
+        <span class="badge">Java Full Stack</span>
+        <span class="badge">JavaScript</span>
+        <span class="badge">C / C++</span>
+        <span class="badge">Google AI Certified</span>
+      </div>
+    </div>
+
+    <!-- Square Box terminal -->
+    <div class="hero-visual" aria-hidden="true">
+      <div class="terminal-window">
+        <div class="terminal-bar">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+          <span class="terminal-title">avinash@portfolio:~</span>
+        </div>
+        <div class="terminal-body" id="terminalBody">
+          <div class="t-line"><span class="t-prompt">$</span> <span class="t-cmd">whoami</span></div>
+          <div class="t-line t-out">Avinash Kumar Sharma</div>
+          <div class="t-line"><span class="t-prompt">$</span> <span class="t-cmd">cat skills.txt</span></div>
+          <div class="t-line t-out t-highlight">Java | JavaScript | C++ | HTML5 | CSS3</div>
+          <div class="t-line"><span class="t-prompt">$</span> <span class="t-cmd">cat status.txt</span></div>
+          <div class="t-line t-out t-success">✓ Open to opportunities</div>
+          <div class="t-line"><span class="t-prompt">$</span> <span class="t-cmd">node --version</span></div>
+          <div class="t-line t-out">v20.x</div>
+          <div class="t-line"><span class="t-prompt">$</span> <span class="t-blink">_</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 01 About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-label">// 01 — about</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-heading">Who I Am</h2>
+          <p>
+            I'm a third-year Computer Science Engineering student at Netaji Subhas University, Jamshedpur. I write
+            clean, practical code — mostly in Java and JavaScript — and I care about making software that actually works
+            and is a pleasure to use.
+          </p>
+          <p>
+            I've spent time as a Software Developer Intern at QOE Technologies, where I worked remotely on real-world
+            software products, maintained data security protocols, and delivered tasks on schedule. Before that, I
+            picked up marketing and creative production skills at Shivani Creation.
+          </p>
+          <p>
+            I'm actively seeking an entry-level IT role or internship where I can grow fast, contribute meaningfully,
+            and keep building things.
+          </p>
+          <!-- Stats -->
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">2+</span>
+              <span class="stat-label">Internships</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Months at QOE</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">2027</span>
+              <span class="stat-label">Graduation</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-card">
+          <div class="profile-card">
+            <div class="profile-avatar">
+              <img src="assets/img/mypic.jpg" alt="Avinash Kumar Sharma" class="profile-image">
+              <div class="avatar-ring"></div>
+            </div>
+            <div class="profile-details">
+              <div class="profile-row">
+                <span class="profile-icon">📍</span>
+                <span>Jamshedpur, Jharkhand</span>
+              </div>
+              <div class="profile-row">
+                <span class="profile-icon">🎓</span>
+                <span>B.Tech CSE — 2027</span>
+              </div>
+              <div class="profile-row">
+                <span class="profile-icon">💼</span>
+                <span>Open to Work</span>
+              </div>
+              <div class="profile-row">
+                <span class="profile-icon">📧</span>
+                <span>avinashsharma.cc@gmail.com</span>
+              </div>
+            </div>
+            <a href="https://linkedin.com/in/avinashkumarsharmaa" target="_blank" rel="noopener" class="profile-link">
+              View LinkedIn ↗
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 Technical Stack -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-label">// 02 — skills</div>
+      <h2 class="section-heading">Technical Stack</h2>
+      <p class="section-sub">Languages, tools, and concepts I work with.</p>
+
+      <div class="skills-grid">
+
+        <div class="skill-group" data-aos="fade-up">
+          <div class="skill-group-header">
+            <span class="skill-group-icon">⟨/⟩</span>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag skill-primary">Java</span>
+            <span class="skill-tag skill-primary">JavaScript</span>
+            <span class="skill-tag">C</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <span>Java</span>
+              <div class="bar-track">
+                <div class="bar-fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <span>JavaScript</span>
+              <div class="bar-track">
+                <div class="bar-fill" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <span>C / C++</span>
+              <div class="bar-track">
+                <div class="bar-fill" data-width="70"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- .CS Fundamentals -->
+        <div class="skill-group" data-aos="fade-up" data-aos-delay="100">
+          <div class="skill-group-header">
+            <span class="skill-group-icon">🧠</span>
+            <h3>CS Fundamentals</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Data Structures</span>
+            <span class="skill-tag">Algorithms</span>
+            <span class="skill-tag">DBMS</span>
+            <span class="skill-tag">Operating Systems</span>
+            <span class="skill-tag">Computer Networks</span>
+            <span class="skill-tag">OOP</span>
+          </div>
+        </div>
+
+        <!-- Tools & Software -->
+        <div class="skill-group" data-aos="fade-up" data-aos-delay="200">
+          <div class="skill-group-header">
+            <span class="skill-group-icon">🛠</span>
+            <h3>Tools & Software</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">MS Office</span>
+            <span class="skill-tag">UI/UX Design</span>
+            <span class="skill-tag">Video Editing</span>
+          </div>
+        </div>
+
+        <!-- Certifications Section -->
+        <div class="skill-group" data-aos="fade-up" data-aos-delay="300">
+          <div class="skill-group-header">
+            <span class="skill-group-icon">🏅</span>
+            <h3>Certifications</h3>
+          </div>
+          <div class="cert-card">
+            <div class="cert-logo">G</div>
+            <div>
+              <div class="cert-name">Generative AI</div>
+              <div class="cert-issuer">Google Skills Boost</div>
+            </div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-logo">G</div>
+            <div>
+              <div class="cert-name">Technical Badges</div>
+              <div class="cert-issuer">Google Skills Boost</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 Working Experience -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-label">// 03 — experience</div>
+      <h2 class="section-heading">Work Experience</h2>
+
+      <div class="timeline">
+
+        <!-- Software Dev -->
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-date">Oct 2025 - Mar 2026</span>
+              <span class="timeline-type">Remote</span>
+            </div>
+            <h3 class="timeline-role">Software Developer Intern</h3>
+            <div class="timeline-company">QOE Technologies and Services</div>
+            <ul class="timeline-points">
+              <li>Developed software solutions within a distributed remote team, maintaining professional coding
+                standards across all deliverables.</li>
+              <li>Enforced strict data security protocols when handling financial information and technical data.</li>
+              <li>Managed technical tasks under a flexible schedule, consistently meeting project deadlines.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Software Development</span>
+              <span>Data Security</span>
+              <span>Remote Collaboration</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Creative Intern -->
+        <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+          <div class="timeline-dot timeline-dot-alt"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-date">Previous Internship</span>
+              <span class="timeline-type">On-site</span>
+            </div>
+            <h3 class="timeline-role">Marketing & Creative Intern</h3>
+            <div class="timeline-company">Shivani Creation</div>
+            <ul class="timeline-points">
+              <li>Produced and edited advertisements for various media platforms using professional video editing
+                software.</li>
+              <li>Coordinated project requirements across management, clients, and vendors to streamline delivery.</li>
+              <li>Organized and maintained complex project documentation and digital file systems.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Video Editing</span>
+              <span>Project Coordination</span>
+              <span>Content Creation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 Projects -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-label">// 04 — projects</div>
+      <h2 class="section-heading">Projects</h2>
+      <p class="section-sub">Things I've built — end to end.</p>
+
+      <div class="projects-grid">
+
+        <!-- Portfolio Website -->
+        <div class="project-card" data-aos="fade-up">
+          <div class="project-header">
+            <div class="project-icon">🌐</div>
+            <div class="project-links">
+              <a href="#" class="project-link" title="View project">↗</a>
+            </div>
+          </div>
+          <h3 class="project-title">Portfolio Website</h3>
+          <p class="project-desc">
+            Built a fully responsive personal website using HTML, CSS, and JavaScript to showcase coding projects and
+            internship achievements. Focused on clean layout, readable code, and cross-browser compatibility.
+          </p>
+          <div class="project-tech">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>Responsive Design</span>
+          </div>
+        </div>
+
+        <!-- Student Management System -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-header">
+            <div class="project-icon">🗂</div>
+            <div class="project-links">
+              <a href="Projects/SMS/index.html" class="project-link" title="View project">↗</a>
+            </div>
+          </div>
+          <h3 class="project-title">Student Management System</h3>
+          <p class="project-desc">
+            A Java-based desktop application applying core OOP principles — encapsulation, inheritance, polymorphism —
+            for efficient student data management. Features CRUD operations and a structured file system for data
+            persistence.
+          </p>
+          <div class="project-tech">
+            <span>Java</span>
+            <span>OOP</span>
+            <span>Data Structures</span>
+            <span>File I/O</span>
+          </div>
+        </div>
+
+        <!-- PG life -->
+        <!-- <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-header">
+            <div class="project-icon">🗂</div>
+            <div class="project-links">
+              <a href="Projects/SMS/index.html" class="project-link" title="View project">↗</a>
+            </div>
+          </div>
+          <h3 class="project-title">PG Life</h3>
+          <p class="project-desc">
+            A Java-based desktop application applying core OOP principles — encapsulation, inheritance, polymorphism —
+            for efficient student data management. Features CRUD operations and a structured file system for data
+            persistence.
+          </p>
+          <div class="project-tech">
+            <span>Java</span>
+            <span>OOP</span>
+            <span>Data Structures</span>
+            <span>File I/O</span>
+          </div>
+        </div>-->
+
+        <!-- Coming soon -->
+        <div class="project-card project-card-cta" data-aos="fade-up" data-aos-delay="200">
+          <div class="cta-inner">
+            <div class="cta-icon">+</div>
+            <h3>More Coming Soon</h3>
+            <p>Currently working on new projects. Check back or reach out to collaborate.</p>
+            <a href="#contact" class="btn btn-primary btn-sm">Let's Build Together</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 Education -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-label">// 05 — education</div>
+      <h2 class="section-heading">Education</h2>
+
+      <div class="edu-grid">
+
+        <div class="edu-card edu-card-main" data-aos="fade-up">
+          <div class="edu-year">2023 - 2027</div>
+          <div class="edu-icon">🎓</div>
+          <h3 class="edu-degree">B.Tech in Computer Science Engineering</h3>
+          <div class="edu-school">Netaji Subhas University</div>
+          <div class="edu-location">Jamshedpur, Jharkhand</div>
+          <div class="edu-courses">
+            <div class="edu-courses-label">Relevant Coursework</div>
+            <div class="edu-course-tags">
+              <span>Software Engineering</span>
+              <span>Web Technologies</span>
+              <span>Database Management</span>
+              <span>Computer Architecture</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-secondary">
+          <div class="edu-card" data-aos="fade-left">
+            <div class="edu-year">2021 - 2023</div>
+            <h3 class="edu-degree">Intermediate (Class XII)</h3>
+            <div class="edu-school">Blue Bells English High School</div>
+            <div class="edu-board">CBSE · Science Stream</div>
+          </div>
+          <div class="edu-card" data-aos="fade-left" data-aos-delay="100">
+            <div class="edu-year">2019 - 2020</div>
+            <h3 class="edu-degree">Matriculation (Class X)</h3>
+            <div class="edu-school">Adibasi Kalyan High School</div>
+            <div class="edu-board">JAC</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 Contact -->
+  <section id="contact" class="section section-alt">
+    <div class="container container-narrow">
+      <div class="section-label">// 06 — contact</div>
+      <h2 class="section-heading">Get In Touch</h2>
+      <p class="section-sub">Open to internships, entry-level roles, and collaborations. Drop me a message.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <a href="mailto:avinashsharma.cc@gmail.com" class="contact-item">
+            <span class="contact-item-icon">📧</span>
+            <div>
+              <div class="contact-item-label">Email</div>
+              <div class="contact-item-value">avinashsharma.cc@gmail.com</div>
+            </div>
+          </a>
+          <a href="tel:+916200918843" class="contact-item">
+            <span class="contact-item-icon">📱</span>
+            <div>
+              <div class="contact-item-label">Phone</div>
+              <div class="contact-item-value">+91 6200 918 843</div>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/avinashkumarsharmaa" target="_blank" rel="noopener" class="contact-item">
+            <span class="contact-item-icon">🔗</span>
+            <div>
+              <div class="contact-item-label">LinkedIn</div>
+              <div class="contact-item-value">linkedin.com/in/avinashkumarsharmaa</div>
+            </div>
+          </a>
+          <div class="contact-item contact-item-static">
+            <span class="contact-item-icon">📍</span>
+            <div>
+              <div class="contact-item-label">Location</div>
+              <div class="contact-item-value">Jamshedpur, Jharkhand, India</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="someone@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Job Opportunity / Collaboration" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Hi Avinash, I'd like to discuss..."
+              required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            <span id="btnText">Send Message</span>
+            <span id="btnLoader" style="display:none;">Sending…</span>
+          </button>
+          <div class="form-success" id="formSuccess" style="display:none;">
+            ✅ Message sent! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- doc Resume -->
+  <section id="resume" class="section resume-section">
+    <div class="container container-narrow">
+      <div class="section-label">// doc</div>
+      <h2 class="section-heading">Grab My Resume</h2>
+      <p class="section-sub">Want a detailed breakdown of my skills, internships, and education? Get the full PDF
+        version.</p>
+      <button id="triggerResumeDownload" class="btn btn-primary">
+        ↓ Download Resume (.pdf)
+      </button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <span class="logo-bracket">&lt;</span>AKS<span class="logo-bracket">/&gt;</span>
+        </div>
+        <p class="footer-text">
+          Built from scratch — HTML, CSS &amp; JavaScript. No frameworks, just craft.
+        </p>
+        <div class="footer-links">
+          <a href="mailto:avinashsharma.cc@gmail.com">Email</a>
+          <a href="https://linkedin.com/in/avinashkumarsharmaa" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer-copy">
+        &copy; 2026 Avinash Kumar Sharma · Jamshedpur, Jharkhand
+      </div>
+    </div>
+  </footer>
+
+  <a href="#hero" class="back-to-top" id="backToTop" aria-label="Back to top">↑</a>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/resume-handler.js"></script>
+  <script src="js/contact-backend-handler.js"></script>
+</body>
+
+</html>

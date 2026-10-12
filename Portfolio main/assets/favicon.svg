@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Hexagon Background and Border -->
+  <polygon points="256,24 464,144 464,368 256,488 48,368 48,144" fill="#0D1B2A" stroke="#00E5FF" stroke-width="32" stroke-linejoin="round"/>
+  
+  <!-- AKS Initials -->
+  <text x="256" y="320" font-family="'Space Grotesk', sans-serif" font-size="160" font-weight="bold" fill="#F0F4FF" text-anchor="middle" letter-spacing="-2">AKS</text>
+  
+  <!-- Accent Dot -->
+  <circle cx="256" cy="400" r="20" fill="#FFB300"/>
+</svg>
