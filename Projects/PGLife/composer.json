@@ -1,0 +1,9 @@
+{
+  "name": "pglife/pglife",
+  "description": "PG Life student PG search web application",
+  "type": "project",
+  "require": {
+    "php": ">=7.4",
+    "ext-mysqli": "*"
+  }
+}

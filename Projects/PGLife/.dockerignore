@@ -1,0 +1,10 @@
+.git
+.github
+.env
+.idea
+.vscode
+node_modules
+react-app/node_modules
+react-app/build
+*.log
+README.md
