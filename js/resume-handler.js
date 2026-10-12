@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
       
       // Create a temporary anchor element
       const link = document.createElement('a');
-      link.href = 'assets/Avinash_Sharma_Resume.pdf'; // Path to your PDF
-      link.download = 'Avinash_Sharma_Resume.pdf';    // The name the downloaded file will have
+      link.href = 'assets/Avinash_kumar_Sharma_Resume.pdf'; // Path to your PDF
+      link.download = 'Avinash_kumar_Sharma_Resume.pdf';    // The name the downloaded file will have
       
       // Append, click, and remove the link
       document.body.appendChild(link);
