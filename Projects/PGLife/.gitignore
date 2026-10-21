@@ -1,9 +1,0 @@
-.env
-.DS_Store
-Thumbs.db
-vendor/
-node_modules/
-react-app/node_modules/
-*.log
-.idea/
-.vscode/

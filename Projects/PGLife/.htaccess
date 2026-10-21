@@ -1,8 +1,0 @@
-DirectoryIndex index.php
-Options -Indexes
-
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    # Rewrite rule disabled to prevent image loading issues
-    # RewriteRule ^img/(delhi|mumbai|bangalore|hyderabad|logo|male|female|unisex|man|filter|desc|asc)\.png$ img/$1.svg [L]
-</IfModule>
